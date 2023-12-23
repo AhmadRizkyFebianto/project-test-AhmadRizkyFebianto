@@ -7,7 +7,6 @@ const IdeastList = () => {
   const pageNumberLocalStorage = localStorage.getItem('pageNumber') || 1;
   const perPageLocalStorage = localStorage.getItem('perPage') || 10;
   const sortByLocalStorage = localStorage.getItem('sortBy') || 'published_at';
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [ideasData, setIdeasData] = useState([]);
   const [perPage, setPerPage] = useState(perPageLocalStorage);
   const [sortBy, setSortBy] = useState(sortByLocalStorage);
@@ -17,18 +16,6 @@ const IdeastList = () => {
   const startItem = (pageNumber - 1) * perPage + 1;
   const endItem = Math.min(pageNumber * perPage, totalDataCount);
   const totalPages = Math.ceil(totalDataCount / perPage);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('pageNumber', pageNumber);

@@ -17,17 +17,17 @@ const Navbar = () => {
           <div>
             <ul className="flex space-x-4">
               <li>
-                <a href="#" className="text-white ">
+                <a href="/#" className="text-white ">
                   Work
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white ">
+                <a href="/#" className="text-white ">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white ">
+                <a href="/#" className="text-white ">
                   Service
                 </a>
               </li>
@@ -37,12 +37,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white ">
+                <a href="/#" className="text-white ">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white ">
+                <a href="/#" className="text-white ">
                   Contact
                 </a>
               </li>

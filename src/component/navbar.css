@@ -1,0 +1,19 @@
+nav{
+    background-color: rgba(255, 102, 0, 1);
+    pointer-events: auto;
+}
+
+.headroom--unpinned nav {
+    transition: transform 500ms ease-in-out;
+    position: fixed;
+    transform: translateY(-100%);
+  }
+  
+.headroom--pinned nav {
+    transition: transform 500ms ease-in-out;
+    background-color: rgba(255, 102, 0, 0.5);
+    position: fixed;
+    transform: translateY(0%);
+}
+
+

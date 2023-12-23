@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Card = ({ imageUrl, dateCreated, title}) => {
 
     const formattedDate = new Date(dateCreated)
@@ -10,7 +9,6 @@ const Card = ({ imageUrl, dateCreated, title}) => {
         month: 'long',
         year: 'numeric',
       });
-      
   return (
     <div className="w-80 h-[23rem] bg-white rounded-xl drop-shadow-xl">
         <div className="rounded-t-xl overflow-hidden">

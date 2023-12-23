@@ -30,13 +30,6 @@ const IdeastList = () => {
     };
   }, []);
 
-//   const bannerStyle = {
-//     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${BannerImg})`,
-//     backgroundSize: 'cover',
-//     backgroundPositionY: `calc(50% - ${scrollPosition * 0.5}px)`,
-//     clipPath: 'polygon(0 0, 100% 0, 100% 70%, 0 100%)'
-//   };
-
   useEffect(() => {
     localStorage.setItem('pageNumber', pageNumber);
   }, [pageNumber]);

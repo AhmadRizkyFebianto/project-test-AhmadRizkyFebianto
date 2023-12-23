@@ -104,8 +104,8 @@ const IdeastList = () => {
               onChange={(e) => setSortBy(e.target.value)}
               value={sortBy}
               className="border-2 py-2 pr-10 pl-3 border-gray-300 rounded-full">
-                <option value={"published_at"}>Newest</option>
-                <option value={"-published_at"}>Oldest</option>
+                <option value={"-published_at"}>Newest</option>
+                <option value={"published_at"}>Oldest</option>
             </select>
           </div>
         </div>
